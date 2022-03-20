@@ -39,11 +39,23 @@ function TeacherPage(props: any) {
           </div>
           <div className="flex flex-col">
             <p className="text-2xl">Холбоосууд</p>
-            <ul>
-              {props.links.map((item: any, i: any) => {
-                return <li key={i}>{item.link}</li>
-              })}
-            </ul>
+            <div className="flex space-x-5">
+              {props.links.mail && (
+                <a href={props.links.mail}>
+                  <img className="socialIcons" src="/mail.png" alt="" />
+                </a>
+              )}
+              {props.links.facebook && (
+                <a href={props.links.facebook}>
+                  <img className="socialIcons" src="/facebook.png" alt="" />
+                </a>
+              )}
+              {props.links.instagram && (
+                <a href={props.links.instagram}>
+                  <img className="socialIcons" src="/instagram.png" alt="" />
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </div>

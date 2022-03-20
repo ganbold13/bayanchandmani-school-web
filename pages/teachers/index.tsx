@@ -18,7 +18,10 @@ function index(props: any) {
               clipRule="evenodd"
             />
           </svg>
-          <input className="bg-gray-100" />
+          <input className="bg-gray-100" onChange={(e) => {
+            e.target.value
+            console.log(e.target.value)
+          }}/>
         </div>
       </div>
       <TeacherList teachers={props.teachers} />

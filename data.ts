@@ -16,11 +16,11 @@ export const data = [
         title: 'МУБИС',
       },
     ],
-    links: [
-      {
-        link: 'google.com',
-      },
-    ],
+    links: {
+      mail: 'https://www.google.com/',
+      facebook: 'https://www.facebook.com/',
+      instagram: null,
+    },
   },
   {
     id: 'TsetsegM',
@@ -39,11 +39,11 @@ export const data = [
         title: 'MUBIS',
       },
     ],
-    links: [
-      {
-        link: 'google.com',
-      },
-    ],
+    links: {
+      mail: 'https://www.google.com/',
+      facebook: 'https://www.facebook.com/',
+      instagram: 'https://instagram.com',
+    },
   },
   {
     id: 'DorjI',
@@ -62,11 +62,11 @@ export const data = [
         title: 'МУБИС',
       },
     ],
-    links: [
-      {
-        link: 'google.com',
-      },
-    ],
+    links: {
+      mail: 'mail.com',
+      facebook: 'facebook.com',
+      instagram: 'instagram.com',
+    },
   },
   {
     id: 'TuulS',
@@ -85,11 +85,11 @@ export const data = [
         title: 'MUBIS',
       },
     ],
-    links: [
-      {
-        link: 'google.com',
-      },
-    ],
+    links: {
+      mail: 'mail.com',
+      facebook: 'facebook.com',
+      instagram: 'instagram.com',
+    },
   },
   {
     id: 'KhenchymYo',
@@ -108,10 +108,10 @@ export const data = [
         title: 'MUBIS',
       },
     ],
-    links: [
-      {
-        link: 'google.com',
-      },
-    ],
+    links: {
+      mail: 'mail.com',
+      facebook: 'facebook.com',
+      instagram: 'instagram.com',
+    },
   },
 ]

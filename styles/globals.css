@@ -35,3 +35,6 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+.socialIcons {
+  @apply w-8 hover:scale-105
+}

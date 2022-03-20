@@ -2,14 +2,14 @@ import TeacherPage from '../../../components/teacher/TeacherPage'
 import { data } from '../../../data'
 function index(props: any) {
   return (
-    <div className="h-screen">
+    <div className="">
       <TeacherPage
         name={props.teachers.name}
         pos={props.teachers.position}
         about={props.teachers.about}
         img={props.teachers.img}
         edu={props.teachers.edu}
-        links = {props.teachers.links}
+        links={props.teachers.links}
       />
     </div>
   )
@@ -26,11 +26,10 @@ export async function getStaticPaths() {
   }
 }
 
-
 export async function getStaticProps(context: any) {
-  const teacher = context.params.teacherPath.toString();  
+  const teacher = context.params.teacherPath.toString()
 
-  const selectedTeacher = data.find(item => (item.name == teacher))
+  const selectedTeacher = data.find((item) => item.name == teacher)
   return {
     props: {
       teachers: selectedTeacher,

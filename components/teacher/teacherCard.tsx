@@ -17,7 +17,7 @@ function TeacherCard(props: any) {
         className="h-32 w-32 overflow-hidden rounded-full object-cover"
         src={props.img}
       />
-      <p className="mt-1 text-lg font-bold">{props.name}</p>
+      <p className="mt-1 text-lg">{props.name}</p>
       <p className="text-xs">{props.pos}</p>
     </div>
   )

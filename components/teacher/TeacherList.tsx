@@ -2,7 +2,7 @@ import TeacherCard from "./teacherCard"
 
 function TeacherList(props:any) {
   return (
-    <div className="flex items-center mx-6 h-screen">
+    <div className="grid grid-cols-4 mx-6">
       {props.teachers.map((teacher: { name: any; position: any; img: any }, i: any) => {
         return(
         <TeacherCard

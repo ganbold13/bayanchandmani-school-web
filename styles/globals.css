@@ -1,13 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  --blue: #08415c;
+  --red: #cc2936;
+  --gray: #6b818c;
+  --yellow: #f1bf98;
+  --slate: #eee5e9;
+}
+
 * {
-  @apply transition ease-in-out;
+  @apply font-mono transition ease-in-out;
+  color: var(--blue);
 }
 .linkHolder {
   display: inline-block;
   position: relative;
-  color: #0087ca;
+  color: var(--blue);
   cursor: pointer;
 }
 .linkHolder::after {
@@ -18,19 +27,11 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: var(--blue);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 .linkHolder:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
-.hideScroll {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.hideScroll::-webkit-scrollbar {
-  display: none;
-  width: 0 !important;
 }

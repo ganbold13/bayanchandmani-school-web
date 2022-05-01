@@ -1,9 +1,9 @@
 function index() {
   return (
-    <div className="mx-auto w-11/12 space-x-5 pt-2">
-      <article className="">
-        <img className=" float-left w-96 rounded-lg mr-12 mb-6" src="/test.jpeg" />
-        <h2 className="my-2 text-3xl font-semibold">Бидний сургууль</h2>
+    <div>
+      <img className="banner" src="/test.jpeg" />
+      <article className="w-11/12 mx-auto">
+        <h2 className="my-5 text-3xl font-semibold">Бидний сургууль</h2>
         <p className="">
           Төрийн Банк нь олон улсын стандартад нийцсэн орчин үеийн банк,
           санхүүгийн цогц үйлчилгээг орон даяар саадгүй хүргэх, бүх талын хамтын

@@ -9,11 +9,9 @@ function Layout(props: any) {
         <title>Баянчандмань ЕБС</title>
         <link rel="icon" href="/logo.ico" />
       </Head>
-      <div className=" object-contain">
-        <Header />
-        <main className="">{props.children}</main>
-      </div>
-      {/* <Footer /> */}
+      <Header />
+      <main>{props.children}</main>
+      <Footer />
     </div>
   )
 }

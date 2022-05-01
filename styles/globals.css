@@ -2,21 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  --blue: #08415c;
-  --red: #cc2936;
+  --blue: #1e6c91;
+  --red: #be3634;
   --gray: #6b818c;
-  --yellow: #f1bf98;
+  --yellow: #dab200;
   --slate: #eee5e9;
 }
 
 * {
-  @apply font-mono transition ease-in-out;
-  color: var(--blue);
+  @apply transition ease-in-out text-gray-500;
+  font-family: 'Rubik', sans-serif;
 }
 .linkHolder {
+  @apply text-blue-999;
+  font-size: 18px;
   display: inline-block;
   position: relative;
-  color: var(--blue);
+  font-weight: 500;
   cursor: pointer;
 }
 .linkHolder::after {
@@ -24,10 +26,10 @@
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 3px;
   bottom: 0;
   left: 0;
-  background-color: var(--blue);
+  background-color: var(--red);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -35,6 +37,13 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+.banner {
+  object-fit: cover;
+  overflow: hidden;
+  height: 570px;
+  width: 100%;
+  /* @apply h-64 md:h-96 */
+}
 .socialIcons {
-  @apply w-8 hover:scale-105
+  @apply w-8 hover:scale-105;
 }

@@ -3,12 +3,13 @@ import { data } from '../../data'
 function index(props: any) {
   return (
     <div>
-      <div className="mx-auto my-4 flex w-11/12 flex-row justify-between">
+      <img className='banner' src="https://managementgroup.app/wp-content/uploads/2021/06/corporate-business-people-business-people.jpg" />
+      <div className="mx-auto my-16 flex w-11/12 flex-row justify-between">
         <p className="text-3xl">Багш, Ажилчид</p>
-        <div className='flex flex-row space-x-5'>
+        <div className="flex flex-row space-x-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 mt-2 "
+            className="mt-2 h-5 w-5 "
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -18,10 +19,13 @@ function index(props: any) {
               clipRule="evenodd"
             />
           </svg>
-          <input className="bg-gray-100" onChange={(e) => {
-            e.target.value
-            console.log(e.target.value)
-          }}/>
+          <input
+            className="bg-gray-100"
+            onChange={(e) => {
+              e.target.value
+              console.log(e.target.value)
+            }}
+          />
         </div>
       </div>
       <TeacherList teachers={props.teachers} />

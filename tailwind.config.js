@@ -7,16 +7,16 @@ module.exports = {
     extend: {
       colors: {
         blue: {
-          999: '#08415C',
+          999: '#1e6c91',
         },
         red: {
-          999: '#CC2936',
+          999: '#be3634',
         },
         gray: {
           999: '#6B818C',
         },
         yellow: {
-          999: '#F1BF98',
+          999: '#dab200',
         },
         slate: {
           999: '#EEE5E9',

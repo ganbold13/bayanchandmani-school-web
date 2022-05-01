@@ -14,7 +14,7 @@ function TeacherCard(props: any) {
       className="m-2 flex cursor-pointer flex-col items-center hover:scale-105"
     >
       <img
-        className="h-32 w-32 overflow-hidden rounded-full object-cover"
+        className="h-64 w-48 rounded-md overflow-hidden object-cover"
         src={props.img}
       />
       <p className="mt-1 text-lg">{props.name}</p>
